@@ -1451,4 +1451,19 @@ Text GLabel 1340 3270 2    50   Input ~ 0
 UART_TX
 Text GLabel 1340 3370 2    50   Input ~ 0
 UART_RX
+$Comp
+L Connector:Conn_01x02_Male 5V-IN1
+U 1 1 5FA7B0BD
+P 2280 3120
+F 0 "5V-IN1" H 2388 3301 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2388 3210 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 2280 3120 50  0001 C CNN
+F 3 "~" H 2280 3120 50  0001 C CNN
+	1    2280 3120
+	1    0    0    -1  
+$EndComp
+Text GLabel 2480 3220 2    50   Input ~ 0
+GND
+Text GLabel 2480 3120 2    50   Input ~ 0
+VBUS
 $EndSCHEMATC

@@ -1433,12 +1433,12 @@ F 5 "C32908" H 4550 4440 50  0001 C CNN "LSCSPART"
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male SERIAL
+L Connector:Conn_01x04_Male SERIAL1
 U 1 1 5FA36316
 P 1140 3270
-F 0 "SERIAL" H 1248 3551 50  0000 C CNN
+F 0 "SERIAL1" H 1248 3551 50  0000 C CNN
 F 1 "Conn_01x04_Male" H 1248 3460 50  0000 C CNN
-F 2 "" H 1140 3270 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1140 3270 50  0001 C CNN
 F 3 "~" H 1140 3270 50  0001 C CNN
 	1    1140 3270
 	1    0    0    -1  
@@ -1451,4 +1451,19 @@ Text GLabel 1340 3270 2    50   Input ~ 0
 UART_TX
 Text GLabel 1340 3370 2    50   Input ~ 0
 UART_RX
+$Comp
+L Connector:Conn_01x02_Male 5V-IN
+U 1 1 5FA7B0BD
+P 2280 3120
+F 0 "5V-IN" H 2388 3301 50  0000 C CNN
+F 1 "Conn_01x02_Male" H 2388 3210 50  0000 C CNN
+F 2 "" H 2280 3120 50  0001 C CNN
+F 3 "~" H 2280 3120 50  0001 C CNN
+	1    2280 3120
+	1    0    0    -1  
+$EndComp
+Text GLabel 2480 3220 2    50   Input ~ 0
+GND
+Text GLabel 2480 3120 2    50   Input ~ 0
+VBUS
 $EndSCHEMATC
