@@ -1,0 +1,120 @@
+27269467070689
+KiCad-Library-JLCPCB
+DIP-22_W10.16mm_Socket
+22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket
+THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket
+0
+22
+22
+KiCad-Library-JLCPCB
+Jack_6.35mm_Chinese_Horizontal_SlotFeet
+
+
+0
+4
+4
+KiCad-Library-JLCPCB
+LGA-12_2x2mm_P0.5mm
+LGA12
+lga land grid array
+0
+12
+12
+KiCad-Library-JLCPCB
+LQFP-48_7x7mm_P0.5mm
+LQFP, 48 Pin (https://www.analog.com/media/en/technical-documentation/data-sheets/ltc2358-16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+LQFP QFP
+0
+48
+48
+KiCad-Library-JLCPCB
+OLED-I2C-SLOTTED-HOLES
+
+
+0
+8
+5
+KiCad-Library-JLCPCB
+OLED-I2C-SLOTTED-HOLES-12mm-standoffs
+
+
+0
+8
+5
+KiCad-Library-JLCPCB
+OLED-I2C-SLOTTED-HOLES-15mm-standoffs
+
+
+0
+8
+5
+KiCad-Library-JLCPCB
+OLED-I2C-SLOTTED-HOLES_copy
+
+
+0
+8
+5
+KiCad-Library-JLCPCB
+RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
+0
+7
+6
+KiCad-Library-JLCPCB
+SOIC-16_3.9x9.9mm_P1.27mm
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
+KiCad-Library-JLCPCB
+SOIC-16_3.9x9.9mm_P1.27mm_JLC_ROTATED
+SOIC, 16 Pin (JEDEC MS-012AC, https://www.analog.com/media/en/package-pcb-resources/package/pkg_pdf/soic_narrow-r/r_16.pdf), generated with kicad-footprint-generator ipc_gullwing_generator.py
+SOIC SO
+0
+16
+16
+KiCad-Library-JLCPCB
+SOT-23
+SOT-23, Standard
+SOT-23
+0
+3
+3
+KiCad-Library-JLCPCB
+SOT-23-3L
+
+
+0
+3
+3
+KiCad-Library-JLCPCB
+SW_Cherry_MX_1.00u_PCB
+Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 1.00u PCB
+0
+2
+2
+KiCad-Library-JLCPCB
+SW_Cherry_MX_1.00u_PCB-ClearKeyCap
+Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 1.00u PCB
+0
+2
+2
+KiCad-Library-JLCPCB
+TCD1304AP-DIP-22
+22-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils), Socket
+THT DIP DIL PDIP 2.54mm 10.16mm 400mil Socket
+0
+22
+22
+KiCad-Library-JLCPCB
+USB-A-PCB
+
+
+0
+4
+4
