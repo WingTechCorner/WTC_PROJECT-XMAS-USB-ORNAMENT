@@ -6,8 +6,11 @@
 #include <Arduino.h>
 #include <Wire.h>
 
+// Global States of LED(s)
+int LEDSTATES[36] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
 // Charlieplexed LED mappings for single LED on at a time
-short LEDPINS[36][8] = {
+int LEDPINS[36][8] = {
   { 1, 0 , 0 , 0 , 0 , 0 , 0 , 0 },
   { 0, 1 , 0 , 0 , 0 , 0 , 0 , 0 },
   { 0, 0 , 1 , 0 , 0 , 0 , 0 , 0 },
@@ -47,6 +50,8 @@ short LEDPINS[36][8] = {
 
 
 
+void LED_ON( int led );
+void LED_TICK();
 
 void setup() {
 
@@ -63,19 +68,29 @@ void loop() {
 
 
 
-void LED_ON( int led) {
+
+/* 
+ * ==================== ==================== ==================== ==================== 
+ */
+
+void LED_ON( int led, int val = 128) {
 
 
 
 };
 
 
+/* 
+ * ==================== ==================== ==================== ==================== 
+ */
+void LED_TICK() {
 
 
-
-
+};
 
 /*
+ * ==================== ==================== ==================== ==================== 
+ *
  * Charlie Plexing Map for LED1 through LED36
  *
  * 0 = LOW
