@@ -7,3 +7,7 @@
 *.net
 *.d356
 *-bak
+fp-info-cache
+.pio
+.pio.*
+.pio/*
