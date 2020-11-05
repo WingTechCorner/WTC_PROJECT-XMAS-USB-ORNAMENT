@@ -350,53 +350,53 @@ Text GLabel 2120 1210 3    50   Input ~ 0
 GND
 Text GLabel 2120 910  1    50   Input ~ 0
 3V3
-Text GLabel 3200 5790 1    50   Input ~ 0
+Text GLabel 1950 4050 1    50   Input ~ 0
 GND
-Text GLabel 3200 6190 3    50   Input ~ 0
+Text GLabel 1950 4450 3    50   Input ~ 0
 GND
 $Comp
 L jlcpcb-C:12pF-50V-0402 C21
 U 1 1 60296197
-P 2710 6320
-F 0 "C21" H 2825 6366 50  0000 L CNN
-F 1 "12pF-50V-0402" H 2825 6275 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 2748 6170 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402CG120J500NT_C1547.pdf" H 2710 6320 0   0001 C CNN
-F 4 "C1547" H 2710 6320 0   0001 C CNN "JLCPCB"
-F 5 "C1547 0402CG120J500NT Guangdong Fenghua Advanced Tech Multilayer Ceramic Capacitors MLCC - SMD/SMT 12pF 50V 0402 RoHS" H 2710 6320 0   0001 C CNN "Description"
-F 6 "C1547" H 2710 6320 0   0001 C CNN "LCSC"
-	1    2710 6320
+P 1460 4580
+F 0 "C21" H 1575 4626 50  0000 L CNN
+F 1 "12pF-50V-0402" H 1575 4535 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 1498 4430 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402CG120J500NT_C1547.pdf" H 1460 4580 0   0001 C CNN
+F 4 "C1547" H 1460 4580 0   0001 C CNN "JLCPCB"
+F 5 "C1547 0402CG120J500NT Guangdong Fenghua Advanced Tech Multilayer Ceramic Capacitors MLCC - SMD/SMT 12pF 50V 0402 RoHS" H 1460 4580 0   0001 C CNN "Description"
+F 6 "C1547" H 1460 4580 0   0001 C CNN "LCSC"
+	1    1460 4580
 	1    0    0    -1  
 $EndComp
 $Comp
 L jlcpcb-C:12pF-50V-0402 C22
 U 1 1 602961A0
-P 3570 6300
-F 0 "C22" H 3685 6346 50  0000 L CNN
-F 1 "12pF-50V-0402" H 3685 6255 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0402_1005Metric" H 3608 6150 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402CG120J500NT_C1547.pdf" H 3570 6300 0   0001 C CNN
-F 4 "C1547" H 3570 6300 0   0001 C CNN "JLCPCB"
-F 5 "C1547 0402CG120J500NT Guangdong Fenghua Advanced Tech Multilayer Ceramic Capacitors MLCC - SMD/SMT 12pF 50V 0402 RoHS" H 3570 6300 0   0001 C CNN "Description"
-F 6 "C1547" H 3570 6300 0   0001 C CNN "LCSC"
-	1    3570 6300
+P 2320 4560
+F 0 "C22" H 2435 4606 50  0000 L CNN
+F 1 "12pF-50V-0402" H 2435 4515 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 2358 4410 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Guangdong-Fenghua-Advanced-Tech-0402CG120J500NT_C1547.pdf" H 2320 4560 0   0001 C CNN
+F 4 "C1547" H 2320 4560 0   0001 C CNN "JLCPCB"
+F 5 "C1547 0402CG120J500NT Guangdong Fenghua Advanced Tech Multilayer Ceramic Capacitors MLCC - SMD/SMT 12pF 50V 0402 RoHS" H 2320 4560 0   0001 C CNN "Description"
+F 6 "C1547" H 2320 4560 0   0001 C CNN "LCSC"
+	1    2320 4560
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2710 6170 2710 5990
+	1460 4430 1460 4250
 Wire Wire Line
-	3570 6150 3570 5990
-Text GLabel 2710 6470 3    50   Input ~ 0
+	2320 4410 2320 4250
+Text GLabel 1460 4730 3    50   Input ~ 0
 GND
-Text GLabel 3570 6450 3    50   Input ~ 0
+Text GLabel 2320 4710 3    50   Input ~ 0
 GND
 Wire Wire Line
-	2710 5990 3050 5990
+	1460 4250 1800 4250
 Wire Wire Line
-	3350 5990 3570 5990
-Text GLabel 2710 5990 1    50   Input ~ 0
+	2100 4250 2320 4250
+Text GLabel 1460 4250 1    50   Input ~ 0
 PF0
-Text GLabel 3570 5990 1    50   Input ~ 0
+Text GLabel 2320 4250 1    50   Input ~ 0
 PF1
 Text GLabel 4050 4840 0    50   Input ~ 0
 PF1
@@ -405,14 +405,14 @@ PF0
 $Comp
 L JLCPCB-KiCad:12mhz-Crystal_GND24 Y2
 U 1 1 60296187
-P 3200 5990
-F 0 "Y2" H 3394 6036 50  0000 L CNN
-F 1 "12mhz-Crystal_GND24" H 3394 5945 50  0000 L CNN
-F 2 "Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm" H 3200 5990 50  0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322512MSB4SI_C9002.pdf" H 3200 5990 50  0001 C CNN
-F 4 "C9002" H 3200 5990 50  0001 C CNN "LSCSPART"
-F 5 "C9002" H 3200 5990 50  0001 C CNN "JLCPCBPART"
-	1    3200 5990
+P 1950 4250
+F 0 "Y2" H 2144 4296 50  0000 L CNN
+F 1 "12mhz-Crystal_GND24" H 2144 4205 50  0000 L CNN
+F 2 "Crystal:Crystal_SMD_TXC_7M-4Pin_3.2x2.5mm" H 1950 4250 50  0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Yangxing-Tech-X322512MSB4SI_C9002.pdf" H 1950 4250 50  0001 C CNN
+F 4 "C9002" H 1950 4250 50  0001 C CNN "LSCSPART"
+F 5 "C9002" H 1950 4250 50  0001 C CNN "JLCPCBPART"
+	1    1950 4250
 	1    0    0    -1  
 $EndComp
 Text GLabel 5050 4840 2    50   Input ~ 0
@@ -497,20 +497,6 @@ Text GLabel 5050 5040 2    50   Input ~ 0
 H
 Wire Wire Line
 	10650 3180 10650 3170
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R1
-U 1 1 60A72B58
-P 7030 3180
-F 0 "R1" V 6823 3180 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6914 3180 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3180 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3180 0   0001 C CNN
-F 4 "C17540" H 7030 3180 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3180 0   0001 C CNN "Description"
-F 6 "C17540" H 7030 3180 0   0001 C CNN "LCSC"
-	1    7030 3180
-	0    1    1    0   
-$EndComp
 Text GLabel 6880 3180 0    50   Input ~ 0
 A
 $Comp
@@ -949,106 +935,8 @@ Wire Wire Line
 	7180 4080 7450 4080
 Text GLabel 6880 3480 0    50   Input ~ 0
 B
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R2
-U 1 1 60A7FD9A
-P 7030 3480
-F 0 "R2" V 6823 3480 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6914 3480 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3480 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3480 0   0001 C CNN
-F 4 "C17540" H 7030 3480 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3480 0   0001 C CNN "Description"
-F 6 "C17540" H 7030 3480 0   0001 C CNN "LCSC"
-	1    7030 3480
-	0    1    1    0   
-$EndComp
 Wire Wire Line
 	10640 3780 10640 3770
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R8
-U 1 1 60A81F90
-P 7080 5280
-F 0 "R8" V 6873 5280 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6964 5280 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7010 5280 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7080 5280 0   0001 C CNN
-F 4 "C17540" H 7080 5280 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7080 5280 0   0001 C CNN "Description"
-F 6 "C17540" H 7080 5280 0   0001 C CNN "LCSC"
-	1    7080 5280
-	0    1    1    0   
-$EndComp
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R7
-U 1 1 60A81917
-P 7070 4980
-F 0 "R7" V 6863 4980 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6954 4980 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 7000 4980 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7070 4980 0   0001 C CNN
-F 4 "C17540" H 7070 4980 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7070 4980 0   0001 C CNN "Description"
-F 6 "C17540" H 7070 4980 0   0001 C CNN "LCSC"
-	1    7070 4980
-	0    1    1    0   
-$EndComp
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R6
-U 1 1 60A8144E
-P 7050 4680
-F 0 "R6" V 6843 4680 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6934 4680 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 4680 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7050 4680 0   0001 C CNN
-F 4 "C17540" H 7050 4680 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7050 4680 0   0001 C CNN "Description"
-F 6 "C17540" H 7050 4680 0   0001 C CNN "LCSC"
-	1    7050 4680
-	0    1    1    0   
-$EndComp
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R5
-U 1 1 60A80DD5
-P 7040 4380
-F 0 "R5" V 6833 4380 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6924 4380 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6970 4380 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7040 4380 0   0001 C CNN
-F 4 "C17540" H 7040 4380 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7040 4380 0   0001 C CNN "Description"
-F 6 "C17540" H 7040 4380 0   0001 C CNN "LCSC"
-	1    7040 4380
-	0    1    1    0   
-$EndComp
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R4
-U 1 1 60A80804
-P 7030 4080
-F 0 "R4" V 6823 4080 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6914 4080 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 4080 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 4080 0   0001 C CNN
-F 4 "C17540" H 7030 4080 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 4080 0   0001 C CNN "Description"
-F 6 "C17540" H 7030 4080 0   0001 C CNN "LCSC"
-	1    7030 4080
-	0    1    1    0   
-$EndComp
-$Comp
-L jlcpcb-R:200Ohms-±1%-1_8W-0805 R3
-U 1 1 60A80203
-P 7030 3780
-F 0 "R3" V 6823 3780 50  0000 C CNN
-F 1 "200Ohms-±1%-1_8W-0805" V 6914 3780 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3780 0   0001 C CNN
-F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3780 0   0001 C CNN
-F 4 "C17540" H 7030 3780 0   0001 C CNN "JLCPCB"
-F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3780 0   0001 C CNN "Description"
-F 6 "C17540" H 7030 3780 0   0001 C CNN "LCSC"
-	1    7030 3780
-	0    1    1    0   
-$EndComp
 Text GLabel 6930 5280 0    50   Input ~ 0
 H
 Text GLabel 6920 4980 0    50   Input ~ 0
@@ -1466,4 +1354,193 @@ Text GLabel 2480 3220 2    50   Input ~ 0
 GND
 Text GLabel 2480 3120 2    50   Input ~ 0
 VBUS
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R7
+U 1 1 60A81917
+P 7070 4980
+F 0 "R7" V 6863 4980 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6954 4980 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7000 4980 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7070 4980 0   0001 C CNN
+F 4 "C17540" H 7070 4980 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7070 4980 0   0001 C CNN "Description"
+F 6 "C17540" H 7070 4980 0   0001 C CNN "LCSC"
+	1    7070 4980
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R6
+U 1 1 60A8144E
+P 7050 4680
+F 0 "R6" V 6843 4680 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6934 4680 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6980 4680 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7050 4680 0   0001 C CNN
+F 4 "C17540" H 7050 4680 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7050 4680 0   0001 C CNN "Description"
+F 6 "C17540" H 7050 4680 0   0001 C CNN "LCSC"
+	1    7050 4680
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R5
+U 1 1 60A80DD5
+P 7040 4380
+F 0 "R5" V 6833 4380 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6924 4380 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6970 4380 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7040 4380 0   0001 C CNN
+F 4 "C17540" H 7040 4380 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7040 4380 0   0001 C CNN "Description"
+F 6 "C17540" H 7040 4380 0   0001 C CNN "LCSC"
+	1    7040 4380
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R4
+U 1 1 60A80804
+P 7030 4080
+F 0 "R4" V 6823 4080 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6914 4080 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 4080 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 4080 0   0001 C CNN
+F 4 "C17540" H 7030 4080 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 4080 0   0001 C CNN "Description"
+F 6 "C17540" H 7030 4080 0   0001 C CNN "LCSC"
+	1    7030 4080
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R2
+U 1 1 60A7FD9A
+P 7030 3480
+F 0 "R2" V 6823 3480 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6914 3480 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3480 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3480 0   0001 C CNN
+F 4 "C17540" H 7030 3480 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3480 0   0001 C CNN "Description"
+F 6 "C17540" H 7030 3480 0   0001 C CNN "LCSC"
+	1    7030 3480
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R3
+U 1 1 60A80203
+P 7030 3780
+F 0 "R3" V 6823 3780 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6914 3780 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3780 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3780 0   0001 C CNN
+F 4 "C17540" H 7030 3780 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3780 0   0001 C CNN "Description"
+F 6 "C17540" H 7030 3780 0   0001 C CNN "LCSC"
+	1    7030 3780
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R1
+U 1 1 60A72B58
+P 7030 3180
+F 0 "R1" V 6823 3180 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6914 3180 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 6960 3180 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7030 3180 0   0001 C CNN
+F 4 "C17540" H 7030 3180 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7030 3180 0   0001 C CNN "Description"
+F 6 "C17540" H 7030 3180 0   0001 C CNN "LCSC"
+	1    7030 3180
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:200Ohms-±1%-1_8W-0805 R8
+U 1 1 60A81F90
+P 7080 5280
+F 0 "R8" V 6873 5280 50  0000 C CNN
+F 1 "200Ohms-±1%-1_8W-0805" V 6964 5280 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 7010 5280 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0805W8F2000T5E_C17540.pdf" H 7080 5280 0   0001 C CNN
+F 4 "C17540" H 7080 5280 0   0001 C CNN "JLCPCB"
+F 5 "C17540 0805W8F2000T5E Uniroyal Elec Chip Resistor - Surface Mount 200Ohms ±1% 1/8W 0805 RoHS" H 7080 5280 0   0001 C CNN "Description"
+F 6 "C17540" H 7080 5280 0   0001 C CNN "LCSC"
+	1    7080 5280
+	0    1    1    0   
+$EndComp
+$Comp
+L jlcpcb-R:4.7KOhms-±1%-1_10W-0603 R10
+U 1 1 5FACF325
+P 3850 3580
+F 0 "R10" V 3643 3580 50  0000 C CNN
+F 1 "4.7KOhms-±1%-1_10W-0603" V 3734 3580 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3780 3580 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4701T5E_C23162.pdf" H 3850 3580 0   0001 C CNN
+F 4 "C23162" H 3850 3580 0   0001 C CNN "JLCPCB"
+F 5 "C23162 0603WAF4701T5E Uniroyal Elec Chip Resistor - Surface Mount 4.7KOhms ±1% 1/10W 0603 RoHS" H 3850 3580 0   0001 C CNN "Description"
+F 6 "C23162" H 3850 3580 0   0001 C CNN "LCSC"
+	1    3850 3580
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4550 3740 4000 3740
+Wire Wire Line
+	4000 3740 4000 3580
+Connection ~ 4550 3740
+Wire Wire Line
+	4050 3940 3700 3940
+Wire Wire Line
+	3700 3940 3700 3580
+Wire Wire Line
+	4050 4140 3450 4140
+Wire Wire Line
+	3450 4140 3450 4600
+$Comp
+L jlcpcb-R:4.7KOhms-±1%-1_10W-0603 R9
+U 1 1 5FAE221B
+P 3450 4750
+F 0 "R9" H 3380 4704 50  0000 R CNN
+F 1 "4.7KOhms-±1%-1_10W-0603" H 3380 4795 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3380 4750 0   0001 C CNN
+F 3 "https://datasheet.lcsc.com/szlcsc/Uniroyal-Elec-0603WAF4701T5E_C23162.pdf" H 3450 4750 0   0001 C CNN
+F 4 "C23162" H 3450 4750 0   0001 C CNN "JLCPCB"
+F 5 "C23162 0603WAF4701T5E Uniroyal Elec Chip Resistor - Surface Mount 4.7KOhms ±1% 1/10W 0603 RoHS" H 3450 4750 0   0001 C CNN "Description"
+F 6 "C23162" H 3450 4750 0   0001 C CNN "LCSC"
+	1    3450 4750
+	-1   0    0    1   
+$EndComp
+Text GLabel 3450 4900 3    50   Input ~ 0
+GND
+Wire Wire Line
+	3450 4140 3450 3970
+Connection ~ 3450 4140
+Text GLabel 3450 3970 1    50   Input ~ 0
+MCU-BOOT
+Text GLabel 5400 1750 2    50   Input ~ 0
+MCU-BOOT
+Text Notes 5540 2050 0    50   ~ 0
+MCU-BOOT - CTS should be LOW. Set HIGH to program via serial.
+Wire Wire Line
+	1070 6890 1070 7200
+Text GLabel 840  7600 0    50   Input ~ 0
+GND
+Text Notes 1030 7650 0    50   ~ 0
+0x12H / 0010010
+Wire Wire Line
+	840  7600 980  7600
+Wire Wire Line
+	980  7600 980  7200
+Wire Wire Line
+	980  7200 1070 7200
+Wire Wire Line
+	4050 5040 3930 5040
+Text GLabel 3930 5040 0    50   Input ~ 0
+IMU-INT
+Text GLabel 2150 6540 2    50   Input ~ 0
+IMU-INT
+Wire Wire Line
+	2030 6540 2045 6540
+Connection ~ 2045 6540
+Wire Wire Line
+	2045 6540 2150 6540
+NoConn ~ 2040 6410
+NoConn ~ 1070 6460
 $EndSCHEMATC
