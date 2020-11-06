@@ -74,10 +74,18 @@ This is a project I'm also submitting to the [JLCPCB.com](http://www.jlcpcb.com)
 
 # Software
 
+
+## Building & Installing Arduino Code
 The code is setup as a `platformio` project. To build:
 
-```
+```bash
+# To compile/build
 pio run
+
+# To upload (Note, assumes serial upload)
 pio run --target=upload
 ```
+
+
+
 
