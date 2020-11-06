@@ -3,14 +3,37 @@
  *
  */
 
+// Basic Arduino Boilerplate and libraries
 #include <Arduino.h>
 #include <Wire.h>
 
+volatile uint32_t last_TS = 0;
+volatile uint32_t TS = 0;
+
 // Global States of LED(s)
-int LEDSTATES[36] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+uint8_t LED_STATE[36] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+uint8_t LED_COUNTER[36] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+
+
+// Mapping pins of STM32 to rows
+uint8_t ROW_PIN[8] = { PA0, PA1, PA4, PA5, PA6, PA7, PA13, PA14 };
+
+/*
+ *
+ * PA0 - A (CharliePlexed LED Lines)
+ * PA1 - B (CharliePlexed LED Lines)
+ * PA4 - C (CharliePlexed LED Lines)
+ * PA5 - D (CharliePlexed LED Lines)
+ * PA6 - E (CharliePlexed LED Lines)
+ * PA7 - F (CharliePlexed LED Lines)
+ * PA13 - G (CharliePlexed LED Lines)
+ * PA14 - H (CharliePlexed LED Lines)
+ *
+ */
+
 
 // Charlieplexed LED mappings for single LED on at a time
-int LEDPINS[36][8] = {
+uint8_t LED_PINS[36][8] = {
   { 1, 0 , 0 , 0 , 0 , 0 , 0 , 0 },
   { 0, 1 , 0 , 0 , 0 , 0 , 0 , 0 },
   { 0, 0 , 1 , 0 , 0 , 0 , 0 , 0 },
@@ -50,48 +73,111 @@ int LEDPINS[36][8] = {
 
 
 
-void LED_ON( int led );
+
+// Variables specific to IMU handling
+uint8_t imuPIN = PB1;
+volatile int imuSTATE = LOW;
+void IMU_SERVICE();
+
+void LED_ON( uint8_t led );
 void LED_TICK();
 
+
+
+/* 
+ * ==================== ==================== ==================== ==================== 
+ * Setup
+ * ==================== ==================== ==================== ==================== 
+ */
 void setup() {
-
-
+  // Setup an interrupt for the IMU (PB1)
+  attachInterrupt(digitalPinToInterrupt(imuPIN),IMU_SERVICE,CHANGE);
 
 };
 
 
 
+/* 
+ * ==================== ==================== ==================== ==================== 
+ * Main Loop
+ * ==================== ==================== ==================== ==================== 
+ */
 void loop() {
 
 };
 
-
-
-
-
 /* 
  * ==================== ==================== ==================== ==================== 
+ * functions to set LED state
+ * ==================== ==================== ==================== ==================== 
+ *
+ * General idea... the value assigned to the state of the LED is the target that needs
+ * to be hit to shut the light off.
+ *
+ * However, only one light should ever be on at one time. 
  */
 
-void LED_ON( int led, int val = 128) {
-
-
-
+void LED_ON( uint8_t led) {
+  LED_STATE[led]=128;  
 };
 
+void LED_OFF( uint8_t led){
+  LED_STATE[led]=0;
+};
 
-/* 
- * ==================== ==================== ==================== ==================== 
- */
+void LED_SET( uint8_t led, uint8_t val = 128) {
+  if ( val >= 128 ) {
+    LED_STATE[led]=128;
+  } else {
+    LED_STATE[led]=val;
+  };
+};
+
 void LED_TICK() {
-
-
+  for( uint8_t i=0; i<36; i++ ) {
+    LED_COUNTER[i] += 1;
+    if ( LED_COUNTER[i] > LED_STATE[i] ) { LED_COUNTER[i]=0; };
+  };
 };
+
+void DISPLAY_LED(uint8_t led = 0) {
+  if ( led < 36 ) {
+    for( uint8_t row = 0; row < 8; row++ ) {
+      digitalWrite( ROW_PIN[row], LED_PINS[led][row] );
+    };
+  }; 
+};
+
+
+void LED_DISPLAY() {
+  for( uint8_t i=0; i<36; i++ ) {
+    if ( LED_COUNTER[i] <= LED_STATE[i] ) {
+      DISPLAY_LED(i);
+    };
+  };
+};
+
+
+/* 
+ * ==================== ==================== ==================== ==================== 
+ * ISR Handling Function from IMU
+ * ==================== ==================== ==================== ==================== 
+ */
+void IMU_SERVICE(){
+  imuSTATE = !imuSTATE;
+};
+
+
+
+/* 
+ * ==================== ==================== ==================== ==================== 
+ * ==================== ==================== ==================== ==================== 
+ */
 
 /*
  * ==================== ==================== ==================== ==================== 
- *
  * Charlie Plexing Map for LED1 through LED36
+ * ==================== ==================== ==================== ==================== 
  *
  * 0 = LOW
  * 1 = HIGH
