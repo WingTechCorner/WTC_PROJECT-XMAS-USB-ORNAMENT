@@ -32,6 +32,8 @@ This is a project I'm also submitting to the [JLCPCB.com](http://www.jlcpcb.com)
 
 ## STM32 
 
+![](images/STM32-pinout.jpg)
+
 * 12Mhz External OSC
 * Boot0 - CH340G's CTS (pin 9) (pulldown via 4.7K, but can be brought HIGH by CH340G by toggling CTS)
 
