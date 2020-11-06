@@ -1,14 +1,14 @@
 # Wing's XMAS Ornament
 
 
-![](JLCPCB-HOLIDAY-PROJECT_front.jpg)
+![](images/JLCPCB-HOLIDAY-PROJECT_front.jpg)
 
 * Something for the holidays.
 * Made using SMT/SMD components so most/all parts on one side.
 * Added header pins on revrse side for adding batteries or different UART(s).
 * Added USB-A PCB top to allow plugging into a laptop or computer USB port or to power with a USB-A extension cable.
 
-![](JLCPCB-HOLIDAY-PROJECT_back.jpg)
+![](images/JLCPCB-HOLIDAY-PROJECT_back.jpg)
 
 
 # JLCPCB Holiday Contest Entry
