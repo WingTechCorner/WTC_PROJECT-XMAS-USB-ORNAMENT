@@ -160,7 +160,17 @@ uint8_t LED_PINS[36][8] = {
 uint8_t imuPIN = PB1;
 volatile int imuSTATE = LOW;
 
+/* 
+ * ==================== ==================== ==================== ==================== 
+ * Various variables For main application
+ * ==================== ==================== ==================== ==================== 
+ */
 
+uint32_t ts_delta =0;
+uint32_t ts_tick  =5000;
+uint32_t ts_last  =0;
+uint32_t ts_curr  =0;
+uint8_t  active_led = 0;
 
 /* 
  * ==================== ==================== ==================== ==================== 
@@ -191,6 +201,10 @@ void setup() {
   attachInterrupt(digitalPinToInterrupt(imuPIN),IMU_SERVICE_UP,RISING);
   attachInterrupt(digitalPinToInterrupt(imuPIN),IMU_SERVICE_DOWN,FALLING);
 
+  // Load up some values for the interval timers
+  ts_last=micros();
+  ts_curr=micros();
+  ts_delta=ts_curr - ts_last;
 };
 
 /* 
@@ -198,8 +212,20 @@ void setup() {
  * Main Loop
  * ==================== ==================== ==================== ==================== 
  */
-void loop() {
 
+void loop() {
+  ts_curr=micros();
+
+  // After a duration of ts_tick, update which LED gets lit
+  if ( ( ts_curr - ts_last ) > ts_tick ) {
+    ts_last = ts_curr;    
+    LED_OFF(active_led);
+    active_led += 1;
+    LED_ON(active_led);
+  };
+
+  LED_TICK();
+  LED_DISPLAY();
 };
 
 /* 
