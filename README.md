@@ -1,5 +1,7 @@
 # Wing's XMAS Ornament
 
+** ISSUE - Design Seems To produce non-working unit. Investigating... **
+
 
 ![](images/JLCPCB-HOLIDAY-PROJECT_front.jpg)
 
